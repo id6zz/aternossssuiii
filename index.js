@@ -6,7 +6,7 @@ let data = JSON.parse(rawdata);
 var lasttime = -1;
 var moving = 0;
 var connected = 0;
-var actions = [ 'forward', 'back', 'left', 'right']
+var actions = [ 'forward', 'back', 'left', 'right','forward','forward','right','right']
 var lastaction;
 var pi = 3.14159;
 var moveinterval = 2; // 2 second movement interval
@@ -29,7 +29,7 @@ bot.loadPlugin(cmd)
 
 bot.on('login',function(){
 	console.log("Logged In")
-	bot.chat("hello");
+	
 });
 
 bot.on('time', function(time) {
